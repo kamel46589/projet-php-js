@@ -1,0 +1,155 @@
+/* Resetting default margin and padding */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 0px;
+}
+
+/* Styling for sections */
+.sections {
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.sections img {
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  float: right; /* Image on the right */
+}
+
+.sections .content {
+  width: 50%;
+  padding: 20px 20px 20px 40px; /* Adjust padding for image placement */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Text content on the left */
+}
+
+.sections h2 {
+  font-size: 2em;
+}
+
+.sections p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Styling for the hero section (optional, adjust as needed) */
+.hero {
+  position: relative;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h2 {
+  font-size: 2.5em;
+}
+
+.overlay p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Responsive Styles (adjust as needed) */
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons a {
+    margin: 10px 0;
+  }
+
+  .sections {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .sections > * {
+    width: 100%;
+  }
+  
+  /* You can add specific styles for smaller screens here */
+}

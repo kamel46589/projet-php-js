@@ -1,0 +1,39 @@
+/* Basic card styling */
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px; /* Adjust width as needed */
+}
+
+/* Style the card header (title) */
+.card h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Style the list items */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  margin-bottom: 5px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: #007bff; /* Change hover color to blue by default */
+}
